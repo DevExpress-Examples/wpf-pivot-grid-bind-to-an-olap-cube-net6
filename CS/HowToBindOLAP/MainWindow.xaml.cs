@@ -1,5 +1,4 @@
-﻿namespace HowToBindOLAP
-{
+﻿namespace HowToBindOLAP {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
