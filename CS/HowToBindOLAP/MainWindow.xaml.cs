@@ -1,8 +1,4 @@
-﻿using DevExpress.Xpf.PivotGrid;
-using System.Windows;
-
-namespace HowToBindOLAP
-{
+﻿namespace HowToBindOLAP {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
