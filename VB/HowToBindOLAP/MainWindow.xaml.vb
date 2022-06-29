@@ -1,3 +1,4 @@
+Imports System.Windows
 Imports DevExpress.Xpf.PivotGrid
 
 Namespace HowToBindOLAP
