@@ -1,5 +1,4 @@
 Imports System.Linq
-Imports System.Windows
 
 Namespace HowToBindOLAP
 
