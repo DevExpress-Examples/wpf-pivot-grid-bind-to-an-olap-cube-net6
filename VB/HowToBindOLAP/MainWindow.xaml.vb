@@ -2,6 +2,7 @@ Imports System.Windows
 Imports DevExpress.Xpf.PivotGrid
 
 Namespace HowToBindOLAP
+
     ''' <summary>
     ''' Interaction logic for MainWindow.xaml
     ''' </summary>
