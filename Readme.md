@@ -9,8 +9,8 @@ This example demonstrates how to bind the Pivot Grid to an MS OLAP cube.
 
 <!-- default file list -->
 ## Files to Look at
-* [MainWindow.xaml](./CS/HowToBindOLAP/MainWindow.xaml) <!--(VB: [MainWindow.xaml](./VB/HowToBindOLAP/MainWindow.xaml))-->
-* [MainWindow.xaml.cs](./CS/HowToBindOLAP/MainWindow.xaml.cs) <!--(VB: [MainWindow.xaml.vb](./VB/HowToBindOLAP/MainWindow.xaml.vb))-->
+* [MainWindow.xaml](./CS/HowToBindOLAP/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/HowToBindOLAP/MainWindow.xaml))
+* [MainWindow.xaml.cs](./CS/HowToBindOLAP/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/HowToBindOLAP/MainWindow.xaml.vb))
 <!-- default file list end -->
 
 ## Example Overview
