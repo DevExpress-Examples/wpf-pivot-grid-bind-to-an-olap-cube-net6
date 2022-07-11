@@ -16,45 +16,41 @@ namespace HowToBindOLAP {
                 "Cube Name=Adventure Works;";
             pivotGridControl1.BeginUpdate();
 
-            // Create fields.
+            // Create Pivot Grid fields.
             PivotGridField fieldMeasuresInternetSalesAmount =
                 new PivotGridField();
             fieldMeasuresInternetSalesAmount.Caption = "Internet Sales Amount";
             fieldMeasuresInternetSalesAmount.Area = FieldArea.DataArea;
-
-            PivotGridField fieldCustomerCountryCountry =
-                new PivotGridField();
-            fieldCustomerCountryCountry.Caption = "Country";
-            fieldCustomerCountryCountry.Area = FieldArea.RowArea;
-
-            PivotGridField fieldDateFiscalYearFiscalYear =
-                new PivotGridField();
-            fieldDateFiscalYearFiscalYear.Caption = "Fiscal Year";
-            fieldDateFiscalYearFiscalYear.Area = FieldArea.ColumnArea;
+            pivotGridControl1.Fields.Add(fieldMeasuresInternetSalesAmount);
 
             PivotGridField fieldSales = new PivotGridField();
             fieldSales.Caption = "Cleared Amount";
             fieldSales.Area = FieldArea.DataArea;
             fieldSales.CellFormat = "c";
+            pivotGridControl1.Fields.Add(fieldSales);
 
             // Populate fields with data.
             fieldMeasuresInternetSalesAmount.DataBinding =
                 new DataSourceColumnBinding("[Measures].[Internet Sales Amount]");
 
-            fieldCustomerCountryCountry.DataBinding =
-                new DataSourceColumnBinding("[Customer].[Country].[Country]");
-
-            fieldDateFiscalYearFiscalYear.DataBinding =
-                new DataSourceColumnBinding("[Date].[Fiscal Year].[Fiscal Year]");
-
             fieldSales.DataBinding =
                 new OlapExpressionBinding("[Measures].[Internet Sales Amount] * 0.87");
 
-            // Add fields to the PivotGridControl.
-            pivotGridControl1.Fields.AddRange(fieldMeasuresInternetSalesAmount,
-                fieldCustomerCountryCountry, fieldDateFiscalYearFiscalYear, fieldSales);
+            AddField("Country", FieldArea.RowArea, "[Customer].[Country].[Country]", 0);
+            AddField("Fiscal Year", FieldArea.ColumnArea, "[Date].[Fiscal Year].[Fiscal Year]", 0);
 
             pivotGridControl1.EndUpdate();
         }
+        // Add fields to the Pivot Grid and bind them to data.
+        private PivotGridField AddField(string caption, FieldArea area, string fieldName, int index) {
+            PivotGridField field = pivotGridControl1.Fields.Add();
+            field.Caption = caption;
+            field.Area = area;
+            if (fieldName != string.Empty)
+                field.DataBinding = new DataSourceColumnBinding(fieldName);
+            field.AreaIndex = index;
+            return field;
+        }
     }
 }
+
