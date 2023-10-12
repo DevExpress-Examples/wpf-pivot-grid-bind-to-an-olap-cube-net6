@@ -7,16 +7,14 @@
 # Pivot Grid for WPF -  Bind the Pivot Grid to an OLAP Cube
 This example demonstrates how to bind the Pivot Grid to an MS OLAP cube.
 
-<!-- default file list -->
-## Files to Look at
-* [MainWindow.xaml](./CS/HowToBindOLAP/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/HowToBindOLAP/MainWindow.xaml))
-* [MainWindow.xaml.cs](./CS/HowToBindOLAP/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/HowToBindOLAP/MainWindow.xaml.vb))
-<!-- default file list end -->
-
 ## Example Overview
 1. Create a data connection. For this, specify the [OlapConnectionString](https://docs.devexpress.com/WPF/DevExpress.Xpf.PivotGrid.PivotGridControl.OlapConnectionString) property.
 2. Create Pivot Grid fields and bind them to data. For this, use [DataSourceColumnBinding](https://docs.devexpress.com/WPF/DevExpress.Xpf.PivotGrid.DataSourceColumnBinding).
 3. Add the created fields to the [PivotGridControl.Fields](https://docs.devexpress.com/WPF/DevExpress.Xpf.PivotGrid.PivotGridControl.Fields) collection. 
+
+## Files to Review
+* [MainWindow.xaml](./CS/HowToBindOLAP/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/HowToBindOLAP/MainWindow.xaml))
+* [MainWindow.xaml.cs](./CS/HowToBindOLAP/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/HowToBindOLAP/MainWindow.xaml.vb))
 
 ## Documentation
 - [OLAP Mode](https://docs.devexpress.com/CoreLibraries/403809/devexpress-pivot-grid-core-library/pivot-grid-modes/olap-mode?v=22.1)
