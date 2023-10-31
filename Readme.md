@@ -18,10 +18,3 @@ This example demonstrates how to bind the Pivot Grid to an MS OLAP cube.
 
 ## Documentation
 - [OLAP Mode](https://docs.devexpress.com/CoreLibraries/403809/devexpress-pivot-grid-core-library/pivot-grid-modes/olap-mode?v=22.1)
-
-## More Examples 
-- [WPF Pivot Grid - Getting Started - Bind a Pivot Grid to an OLAP Cube](https://github.com/DevExpress-Examples/wpf-pivot-grid-getting-started-bind-a-pivot-grid-to-an-olap-cube-runtime-sample-t540936)
-
-
-
-
