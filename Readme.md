@@ -18,7 +18,7 @@ This example demonstrates how to bind the Pivot Grid to an MS OLAP cube.
 * [MainWindow.xaml.cs](./CS/HowToBindOLAP/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/HowToBindOLAP/MainWindow.xaml.vb))
 
 ## Documentation
-- [OLAP Mode](https://docs.devexpress.com/CoreLibraries/403809/devexpress-pivot-grid-core-library/pivot-grid-modes/olap-mode?v=22.1)
+- [OLAP Mode](https://docs.devexpress.com/CoreLibraries/403809/devexpress-pivot-grid-core-library/pivot-grid-modes/olap-mode)
 <!-- feedback -->
 ## Does this example address your development requirements/objectives?
 
